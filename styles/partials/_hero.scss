@@ -43,7 +43,7 @@
     padding-left: 0;
     font-size: $sub-header-font-m;
     line-height: $subheader-lh-m;
-    margin-bottom: 2.5rem;
+    margin-bottom: 0.5rem;
   }
 
   @include tablet {
@@ -58,6 +58,7 @@
 
     &__sub-lead-text {
       font-size: $h2-header-font-dt;
+      margin-bottom: 2.5rem;
     }
 
     &__music {
@@ -71,7 +72,6 @@
 
     &__sub-lead-text {
       margin-top: 10rem;
-      font-size: $sub-header-font-dt;
     }
 
     &__content-container {

@@ -247,7 +247,7 @@ body {
   padding-left: 0;
   font-size: 0.875rem;
   line-height: 1.375rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 0.5rem;
 }
 
 @media (min-width: 768px) {
@@ -262,6 +262,7 @@ body {
   }
   .shows-hero__sub-lead-text {
     font-size: 1.5rem;
+    margin-bottom: 2.5rem;
   }
   .shows-hero__music {
     width: 61.45%;
@@ -275,7 +276,6 @@ body {
   }
   .shows-hero__sub-lead-text {
     margin-top: 10rem;
-    font-size: 1rem;
   }
   .shows-hero__content-container {
     display: -webkit-box;
