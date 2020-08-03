@@ -1,0 +1,62 @@
+.gallery {
+  padding: 2rem 1rem;
+  background-color: $alabaster;
+
+  &__heading {
+    font-size: $header-font-m;
+    font-family: 'AvenirNext-bold';
+    color: $black;
+    margin: 0 0 1.5rem 0;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  @include tablet {
+    padding: 2rem 1.5rem;
+
+    &__img {
+      width: 31.11%;
+      height: auto;
+      margin-bottom: 1.5rem;
+    }
+
+    &__container {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &__heading {
+      font-size: $h1-header-font-dt;
+    }
+  }
+
+  @include desktop {
+    padding: 3rem 11.25rem 1rem;
+
+    &__heading {
+      margin-bottom: 4rem;
+    }
+
+    &__img {
+      min-width: 31.85%;
+      height: auto;
+      filter: grayscale(100%);
+
+      &:hover {
+        filter: grayscale(0);
+        cursor: pointer;
+      }
+    }
+  }
+}

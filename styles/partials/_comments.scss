@@ -1,0 +1,137 @@
+.comments {
+  padding: 2rem 1rem 2.5rem;
+
+  &__heading {
+    font-size: $header-font-m;
+    font-family: 'AvenirNext-bold';
+    color: $black;
+    margin-bottom: 2.5rem;
+  }
+
+  &__form-container {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $silver;
+  }
+
+  &__form {
+    width: 80%;
+  }
+
+  &__comment-img {
+    height: 3rem;
+    border-radius: 50%;
+    margin-top: 0.5rem;
+  }
+
+  &__label {
+    display: block;
+    font-size: $labels-font-m;
+    font-family: 'AvenirNext-demi-bold';
+    color: $silver;
+    text-transform: uppercase;
+    margin-bottom: 0.25rem;
+  }
+
+  &__name-input,
+  &__comment-input {
+    width: 100%;
+  }
+
+  &__name-input {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 2px solid $black;
+    border-radius: 5px;
+  }
+
+  &__comment-input {
+    padding: 0.5rem;
+    background-color: $alabaster;
+    border: 1px solid $silver;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+  }
+
+  &__btn {
+    margin-bottom: 2rem;
+  }
+
+
+  // Preloaded Comments
+  &__user-comment {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid $silver;
+    display: flex;
+  }
+
+  &__user-img {
+    height: 2.5rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+  }
+
+  &__body-heading {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+
+  &__body-heading-name {
+    font-size: $sub-header-font-m;
+    font-family: 'AvenirNext-demi-bold';
+  }
+
+  &__body-heading-date {
+    color: $silver;
+  }
+
+  @include tablet {
+    padding-left: 7.75rem;
+    padding-right: 7.75rem;
+
+    &__form-container {
+      position: relative;
+    }
+
+    &__form {
+      width: 100%;
+    }
+
+    &__comment-img {
+      margin-right: 1.25rem;
+    }
+
+    &__btn {
+      float: right;
+    }
+  }
+
+  @include desktop {
+    padding: 3rem 11.25rem 2.5rem;
+
+    &__form-container {
+      padding-left: 17.25rem;
+      padding-right: 17.25rem;
+    }
+
+    &__user-comments {
+      padding-left: 17.25rem;
+      padding-right: 17.25rem;
+    }
+
+    &__body-heading {
+      display: flex;
+      justify-content: initial;
+      align-items: center;
+    }
+
+    &__body-heading-name {
+      margin-right: 0.5rem;
+    }
+
+    &__form-container {
+      border-bottom: none;
+    }
+  }
+}

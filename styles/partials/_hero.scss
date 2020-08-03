@@ -1,0 +1,93 @@
+// Biography Hero Section
+.hero {
+  height: 11.43rem;
+  background-image: url(../assets/images/hero.jpg);
+
+  @include tablet {
+    height: 25rem;
+
+    &__lead-text {
+      font-size: $hero-font-dt;
+      line-height: $hero-lh-dt;
+      padding-left: 1.5rem;
+    }
+  }
+
+  @include desktop {
+    height: 41.88rem;
+
+    &__lead-text {
+      padding-left: 11.25rem;
+    }
+  }
+}
+
+
+// Shows Hero Section
+.shows-hero {
+  min-height: 29.5rem;
+  background-image: url(../../assets/images/shows-hero.jpg);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 4rem 1rem 0;
+
+  &__lead-text {
+    padding-left: 0;
+    margin-bottom: 4rem;
+    font-size: $h1-header-font-dt;
+    line-height: $h1-header-lh-dt;
+  }
+
+  &__sub-lead-text {
+    padding-left: 0;
+    font-size: $sub-header-font-m;
+    line-height: $subheader-lh-m;
+    margin-bottom: 2.5rem;
+  }
+
+  @include tablet {
+    min-height: 41.875rem;
+    padding: 6rem 1.5rem;
+
+    &__lead-text {
+      font-size: $hero-font-dt;
+      line-height: $hero-lh-dt;
+      width: 77.6%;
+    }
+
+    &__sub-lead-text {
+      font-size: $h2-header-font-dt;
+    }
+
+    &__music {
+      width: 61.45%;
+    }
+  }
+
+  @include desktop {
+    height: 41.875rem;
+    padding: 0 11.25rem;
+
+    &__sub-lead-text {
+      margin-top: 10rem;
+      font-size: $sub-header-font-dt;
+    }
+
+    &__content-container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__lead-text {
+      width: 55%;
+      font-size: $hero-font-dt;
+      line-height: $hero-lh-dt;
+    }
+
+    &__music {
+      width: 40%;
+      align-self: center;
+    }
+  }
+}

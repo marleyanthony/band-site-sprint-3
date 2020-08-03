@@ -1,0 +1,118 @@
+// Shows Table
+.shows-table {
+  padding: 2rem 1rem;
+
+  &__header {
+    margin-bottom: 0.5rem;
+    font-size: $header-font-m;
+    line-height: $header-lh-m;
+    color: $black;
+    font-family: 'AvenirNext-bold';
+  }
+
+  &__ticket-container {
+    // height: 18rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid $mercury;
+  }
+
+  &__label {
+    font-size: $labels-font-m;
+    font-family: 'AvenirNext-demi-bold';
+    color: $silver;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+
+  &__labels-dt-container {
+    display: none;
+  }
+
+  &__date {
+    font-family: 'AvenirNext-demi-bold';
+    margin-bottom: 1.5rem;
+  }
+
+  &__venue {
+    margin-bottom: 1rem;
+  }
+
+  &__location {
+    margin-bottom: 2rem;
+  }
+
+  @include tablet {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+
+    &__ticket-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 6.5rem;
+      border-bottom: 1px solid $silver;
+      position: relative;
+    }
+
+    &__label {
+      display: none;
+    }
+
+    &__date,
+    &__venue,
+    &__location {
+      margin-bottom: 0;
+      font-size: $lists-cont-font-dt;
+    }
+
+    &__date {
+      font-size: $lists-cont-font-dt;
+      // width: 125px;
+    }
+
+    &__venue {
+      // width: 110px;
+    }
+
+    .shows-table {
+      &__labels-dt-container {
+        display: flex;
+        justify-content: space-between;
+        font-size: $lists-cont-font-dt;
+        font-family: 'AvenirNext-demi-bold';
+        color: $silver;
+        text-transform: uppercase;
+      }
+
+      &__label-dt {
+
+        &:first-child {
+          width: 60px;
+        }
+
+        &:nth-child(2) {
+          width: 40px;
+        }
+
+        &:nth-child(3) {
+          width: 50px;
+        }
+      }
+    }
+
+    @include desktop {
+      padding: 3rem 11.25rem;
+      display: flex;
+      justify-content: space-between;
+
+      &__header {
+        font-size: $h1-header-font-dt;
+      }
+
+      &__ticket-wrapper {
+        min-width: 50.25rem;
+      }
+    }
+  }
+}

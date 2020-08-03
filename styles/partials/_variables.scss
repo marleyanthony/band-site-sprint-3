@@ -1,0 +1,64 @@
+// (dt = desktop | t = tablet | m = mobile) 
+
+// font sizes - dt / t 
+// h1 hero 
+$hero-font-dt: 3.75rem;
+// h1 header
+$h1-header-font-dt: 2.25rem;
+// h2 header
+$h2-header-font-dt: 1.5rem;
+// h3 subheader 
+$sub-header-font-dt: 1rem;
+// paragraphs and comments 
+$para-comm-font-dt: 0.875rem;
+// lists and contact
+$lists-cont-font-dt: 0.875rem;
+// labels 
+$labels-font-dt: 0.75rem;
+
+
+// font sizes - m 
+// h1 header
+$header-font-m: 1.5rem;
+// h2 sub header
+$sub-header-font-m: 0.875rem;
+// paragraph 
+$para-font-m: 0.8125rem;
+// list and contact
+$lists-cont-font-m: 0.8125rem;
+// labels
+$labels-font-m: 0.75rem;
+
+
+// Line heights (lh = line height)
+$header-lh-m: 2rem;
+$subheader-lh-m: 1.375rem;
+$para-lh-m: 1.125rem;
+$lists-cont-lh-m: 1.125rem;
+$labels-lh-m: 1.25rem;
+
+$hero-lh-dt: 4.25rem;
+$h1-header-lh-dt: 2.75rem;
+$h2-header-lh-dt: 2rem;
+$sub-header-lh-dt: 1.5rem;
+$para-cont-lh-dt: 1.375rem;
+$lists-cont-lh-dt: 1.25rem;
+$labels-lh-dt: 1.25rem;
+
+
+
+// colors 
+$black: #323232;
+$instock-blue: #004892;
+$instock-blue-dark: #002f5f;
+$brainflix-blue: #0095ff;
+$brainflix-blue-dark: #0065ad;
+$white: #ffffff;
+$silver: #afafaf;
+$mercury: #e1e1e1;
+$alabaster: #fafafa;
+
+
+// breakpoints 
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 1440px;

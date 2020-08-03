@@ -1,0 +1,145 @@
+.footer {
+  background-color: $black;
+  color: $white;
+  padding: 3rem 0.5rem;
+
+  &__logo {
+    display: none;
+  }
+
+  // from a purely visual standpoint, I felt like the heading for the footer section should've been 2.3rem instead of the 1.5rem from the typography document. left it at 1.5rem to be consistent with the document
+  &__heading {
+    font-size: $header-font-m;
+    font-size: 2.3rem;
+    font-family: 'AvenirNext-bold';
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+
+  &__social-icon {
+    font-size: 1.2rem;
+    margin: 0 1.5rem 3rem 0.75rem;
+  }
+
+  &__first-container-header,
+  &__first-container-company,
+  &__second-container-header,
+  &__second-container-company,
+  &__third-container-header,
+  &__third-container-company {
+    font-size: $lists-cont-font-m;
+    font-family: 'AvenirNext-bold';
+  }
+
+  &__first-container-company,
+  &__second-container-company,
+  &__third-container-company {
+    margin-bottom: 1rem;
+  }
+
+  &__first-container-address,
+  &__second-container-address,
+  &__third-container-address {
+    font-size: $lists-cont-font-m;
+    margin-bottom: 1rem;
+  }
+
+  &__first-container-email,
+  &__second-container-email,
+  &__third-container-email {
+    font-size: $lists-cont-font-m;
+    color: $white;
+    display: inline-block;
+    margin-bottom: 2rem;
+  }
+
+  &__copyright {
+    font-size: $lists-cont-font-m;
+  }
+
+  @include tablet {
+    padding: 3rem 1.5rem;
+
+    &__heading {
+      display: inline;
+      margin-right: 4rem;
+      font-size: $h1-header-font-dt;
+    }
+
+    &__social-icon {
+      margin-bottom: 0;
+    }
+
+    &__logo {
+      display: initial;
+    }
+
+    &__contact-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 3rem;
+    }
+
+    &__contact-left-side {
+      align-self: flex-end;
+    }
+
+    &__booking-container {
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    &__first-container,
+    &__second-container,
+    &__third-container {
+      min-width: 31.11%;
+      height: auto;
+      margin-right: 1.5rem;
+    }
+  }
+
+  @include desktop {
+    padding: 3rem 11.25rem;
+
+    &__heading {
+      margin-bottom: 3.5rem;
+      margin-right: 4rem;
+    }
+
+    &__logo {
+      width: 120px;
+      height: 24px;
+    }
+
+    &__social-icon {
+      margin-right: 2rem;
+    }
+
+    &__booking-container {
+      justify-content: flex-start;
+    }
+
+    &__first-container-company,
+    &__second-container-company,
+    &__third-container-company {
+      margin-bottom: 1.5rem;
+    }
+
+    &__first-container-address,
+    &__second-container-address,
+    &__third-container-address {
+      margin-bottom: 1.5rem;
+    }
+
+    &__first-container {
+      min-width: 224.83px;
+      margin-right: 4rem;
+    }
+
+    &__second-container {
+      min-width: 224.83px;
+      margin-right: 4rem;
+    }
+  }
+}

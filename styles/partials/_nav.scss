@@ -1,0 +1,83 @@
+.nav {
+  background-color: $black;
+  text-align: center;
+  height: 5rem;
+
+  &__logo {
+    padding: 1rem 0 1rem 0;
+  }
+
+  &__nav-items {
+    width: 100%;
+    display: flex;
+
+    &--active {
+      border-bottom: 5px solid $white;
+      padding-bottom: 0.45rem;
+      width: 50%;
+    }
+  }
+
+  &__bio-item-link,
+  &__shows-item-link {
+    color: $white;
+  }
+
+  &__bio-item,
+  &__shows-item {
+    width: 50%;
+    text-align: center;
+    font-size: $labels-font-m;
+    font-family: 'AvenirNext-demi-bold';
+  }
+
+  @include tablet {
+    display: flex;
+    align-items: center;
+    padding-left: 1.5rem;
+
+    &__bio-item,
+    &__shows-item {
+      font-size: $sub-header-font-dt;
+      line-height: $sub-header-lh-dt;
+      width: initial;
+      margin-left: 2rem;
+    }
+
+    &__bio-item,
+    &__shows-item {
+      padding: 1.8rem 0;
+    }
+
+    &__nav-items {
+      justify-content: initial;
+      align-items: center;
+
+      &--active {
+        padding-bottom: 1.4rem;
+      }
+    }
+  }
+
+  @include desktop {
+    padding-left: 11.25rem;
+
+
+
+    &__logo-link {
+      padding-right: 0;
+      margin-right: 3.5rem;
+    }
+
+    &__bio-item {
+      margin-left: 0;
+      margin-right: 3.5rem;
+      width: 80px;
+      overflow: hidden;
+    }
+
+    &__shows-item {
+      margin-left: 0;
+    }
+  }
+}
